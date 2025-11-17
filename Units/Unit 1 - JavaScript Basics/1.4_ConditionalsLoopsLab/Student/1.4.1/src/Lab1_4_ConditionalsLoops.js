@@ -18,12 +18,14 @@ console.log ("End of program")
 
 let a = 1
 let b = 2
-if (a<b) {
+if (){
+    if (a<b) {
     console.log("a is less than b")
 } else if (a>b) {
     console.log("a is greater than b")
 } else if (a=b) {
     console.log("a is equal to b")
+}
 }
 
 // TODO 3: Switch statement for language greeting
@@ -45,26 +47,61 @@ switch (language) {
         break;
 }
 
+// Tech 
+// APPL - apple
+// META - facebook
+// NVDA - nvidia
+
+// Healthcare
+// UHC - united health care
+// PFE - pfizer
+// CVS
+
+// Oil
+// SHEL - shell
+// CVX - cheveron 
+// BP - brtish petrolium
+
+let ticker = 'APPL'
+
+switch (ticker){
+    case "APPL": 
+    case "NVDA":
+    case "META":
+        console.log(`Your stock ${ticker} is in the Technology Section`)
+        break;
+    case "PFE":
+    case "CVS":
+    case "UHC":
+        console.log(`Your stock ${ticker} is in the Healthcare department`)
+        break;
+    case "SHEL":
+    case "PFE":
+    case "BP":
+        console.log(`Your stock ${ticker} is in the oil department`)
+        break;
+}
+
+
 // TODO 4: While loop (1 to 10)
 
-let score = 0 
-while (score < 10) {
-    score++
-    console.log("Score: ", score)
+let counter = 1 
+while (score < 11) {
+    console.log("counter: ", + counter)
+    counter++;
+
 }
 
 
 // TODO 5: Do..while loop (1 to 5)
 
-let count = 0;
+let count = 1;
 do {
-    if(count % 10 == 0){
+    
     console.log("Count: ", count)
     count++;
-    }else {
-        count++;
-    }
-} while (count <= 100)
+} while (counter<6)
+
 
 // TODO 6: For loop (1 to 20, print "ten" at 10 and "twenty" at 20)
 
